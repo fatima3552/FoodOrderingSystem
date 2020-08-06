@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodorderingsys">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CheckOut"></activity>
+        <activity android:name=".ConfirmOrder" />
+        <activity android:name=".CallUs" />
+        <activity android:name=".showemplist" />
+        <activity android:name=".showempinfo" />
+        <activity android:name=".showcustlist" />
+        <activity android:name=".showCustinfo" />
+        <activity android:name=".AddToCart" />
+        <activity android:name=".customerAdminWork" />
+        <activity android:name=".adminWork" />
+        <activity android:name=".custSeeProduct" />
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".NavigationDrawer"
+            android:theme="@style/AppTheme.NoActionBar"
+        />
+        <activity android:name=".IntroActivity"/>
+        <activity android:name=".displayProdInfo" />
+        <activity android:name=".GirdView" />
+        <activity
+            android:name=".CategoryMenu"
+            android:label="Category Menu"
+            />
+        <activity
+            android:name=".CustSignIn"
+            android:label=" Customer LogIn" />
+        <activity
+            android:name=".CustInsertInfo"
+            android:label="Customer Sign up" />
+        <activity
+            android:name=".customerLogInandSignUp"
+            android:label="LogIn or Sign Up" />
+        <activity android:name=".choice" />
+        <activity
+            android:name=".loginActivity"
+            android:label="Employee LogIn" />
+        <activity
+            android:name=".LaunchActivity"
+            android:label="LogIn or Sign Up" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="Products" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Employee Sign Up" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

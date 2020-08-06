@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".Main2Activity"
+    android:background="@drawable/background2">
+
+
+
+    <TextView
+        android:id="@+id/tvpdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Products Information"
+        android:textColor="#2E3452"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/indie_flower" />
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvpdata"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="-3dp"
+        android:drawableTop="@drawable/signup"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvpname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvpdata"
+        android:layout_marginTop="130dp"
+        android:text="Product Name:"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/etpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_centerInParent="true"
+        android:hint="product name"
+        android:layout_marginTop="-7dp"
+        android:layout_below="@id/tvpname"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvpcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvpname"
+        android:layout_marginTop="70dp"
+        android:text="Category: "
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etpcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvpcategory"
+        android:hint="Category" />
+
+    <TextView
+        android:id="@+id/tvpprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpcategory"
+        android:text="Product Price: "
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/etpprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="product price"
+        android:layout_below="@id/tvpprice"/>
+
+
+    <TextView
+        android:id="@+id/tvpimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpprice"
+        android:text="Product Image Name: "
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/etpimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Image Name"
+        android:layout_below="@id/tvpimg"/>
+
+    <Button
+        android:id="@+id/btninsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpimg"
+        android:background="#C3FFFFFF"
+        android:onClick="insertProdData"
+        android:text="Enter Product  "
+        android:textColor="#2E3452"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btninsert"
+        android:layout_centerInParent="true"
+        android:background="#C3FFFFFF"
+        android:onClick="viewproData"
+        android:text="view list"
+
+        android:textColor="#2E3452"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnview"
+        android:layout_centerInParent="true"
+        android:background="#C3FFFFFF"
+        android:onClick="DeleteRecords"
+        android:text="Delete"
+        android:textColor="#2E3452"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnview"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/btndelete"
+        android:background="#C3FFFFFF"
+        android:onClick="UpdateRecords"
+        android:text="Update"
+        android:textColor="#2E3452"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnview"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/btndelete"
+        android:background="#C3FFFFFF"
+        android:onClick="SearchRecords"
+        android:text="SEARCH"
+        android:textColor="#2E3452"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpimg"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/btninsert"
+        android:background="#C3FFFFFF"
+        android:drawableRight="@drawable/menu"
+        android:onClick="menu"
+        android:text="menu"
+        android:textColor="#2E3452"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btndelete"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="8dp"
+        android:background="#C3FFFFFF"
+        android:drawableTop="@drawable/home"
+        android:onClick="cback"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmenu" />
+
+</RelativeLayout>
+

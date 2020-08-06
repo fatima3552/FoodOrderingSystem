@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="111dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/icons3" />
+
+    <TextView
+        android:id="@+id/tvedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:drawableRight="@drawable/signup"
+        android:fontFamily="@font/indie_flower"
+        android:text="Welcome to Employee Sign Up  "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Employee Name"
+            app:counterMaxLength="25"
+            >
+
+            <EditText
+                android:id="@+id/etename"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvename"
+                android:drawableStart="@drawable/empicon"
+                android:drawableLeft="@drawable/empicon"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            >
+
+            <EditText
+                android:id="@+id/etcontno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvcontno"
+                android:drawableStart="@drawable/call"
+                android:drawableLeft="@drawable/call"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            >
+
+            <EditText
+                android:id="@+id/etpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvpass"
+                android:drawableStart="@drawable/pass"
+                android:drawableLeft="@drawable/pass"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Confirm Password"
+            app:passwordToggleEnabled="true"
+            >
+
+            <EditText
+                android:id="@+id/etconfirmpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvpass"
+                android:drawableStart="@drawable/pass"
+                android:drawableLeft="@drawable/pass"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            >
+
+            <EditText
+                android:id="@+id/etemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvemail"
+                android:drawableStart="@drawable/email"
+                android:drawableLeft="@drawable/email"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btninsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etemail"
+            android:background="@drawable/round_button"
+            android:onClick="insertEmpData"
+            android:text="Register"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tvlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btninsert"
+            android:background="#6BFFFFFF"
+            android:gravity="center"
+            android:onClick="Login"
+            android:text="Already  have account  Login In"
+            android:textColor="#000"
+            android:textSize="16dp" />
+    </LinearLayout>
+   </LinearLayout>

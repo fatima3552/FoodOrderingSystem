@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Login"
+        android:layout_gravity="top|center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#171616"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/indie_flower"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:drawableLeft="@drawable/empicon"
+        android:ems="10"
+        android:id="@+id/etmail"
+        android:hint="Your email"
+        android:layout_gravity="top|center"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etpass"
+        android:hint="Your password"
+        android:drawableLeft="@drawable/pass"
+        android:inputType="textPassword"
+        android:layout_gravity="top|center"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:background="#231F23"
+        android:drawableRight="@drawable/next"
+        android:onClick="emplogin"
+        android:text="login"
+
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/tvlreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Not Registered"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/tvlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Sign up"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E91E63"
+        android:onClick="signup"
+        tools:ignore="OnClick"
+
+        />
+
+
+</LinearLayout>
+

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".displayProdInfo">
+
+    <TextView
+        android:id="@+id/textViewprice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="30dp"
+        android:text="Price : "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/editTextprice2"
+        android:layout_width="42dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:text="Rs"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textViewprice2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <TextView
+        android:id="@+id/TextViewName"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="194dp"
+        android:hint="Name"
+        android:gravity="center"
+        android:layout_marginRight="194dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="231dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewName"
+        app:srcCompat="@drawable/alfredo" />
+
+    <TextView
+        android:id="@+id/textViewcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="100dp"
+        android:text="Category : "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextprice"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/editTextprice2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Quantity : "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewcat" />
+
+    <TextView
+        android:id="@+id/textViewqty"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/buttonadd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonminus"
+        app:layout_constraintTop_toBottomOf="@+id/textViewquantity" />
+
+    <Button
+        android:id="@+id/buttonminus"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:onClick="sub"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewquantity" />
+
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_width="39dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginRight="191dp"
+        android:gravity="center"
+        android:onClick="add"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewqty"
+        app:layout_constraintTop_toBottomOf="@+id/textViewquantity" />
+
+    <Button
+        android:id="@+id/buttonupd"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="346dp"
+        android:gravity="center"
+        android:onClick="UpdatepRecords"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewqty"
+        app:layout_constraintStart_toEndOf="@+id/textViewcat"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginBottom="70dp"
+        android:background="#231F23"
+        android:drawableRight="@drawable/next"
+        android:onClick="addnewitems"
+        android:text="Add new item"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonadd" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="88dp"
+        android:drawableRight="@drawable/menu"
+        android:onClick="menu"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonupd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

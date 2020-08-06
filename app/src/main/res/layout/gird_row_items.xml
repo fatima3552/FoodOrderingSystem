@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gvrelativelayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/tvitemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="pasta"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/ivitemimg"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvitemname"
+        android:scaleType="fitXY"
+        android:src="@drawable/italian" />
+
+    <TextView
+        android:id="@+id/tvpRs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivitemimg"
+        android:text="Rs:  "
+        android:textColor="#000"
+        android:textSize="16dp"
+
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvitemprice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivitemimg"
+        android:layout_toRightOf="@id/tvpRs"
+        android:text=" 250"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

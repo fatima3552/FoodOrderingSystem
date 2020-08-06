@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:orientation="vertical"
+    android:padding="6dp"
+    >
+
+    <TextView
+        android:id="@+id/tvBill3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Sub Total:"
+        app:layout_constraintEnd_toStartOf="@+id/tvBill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivitemimg" />
+
+    <Button
+        android:id="@+id/buttonadd2"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/ic_baseline_edit_24"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvitemprice" />
+
+    <TextView
+        android:id="@+id/tvBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Total Bill: "
+        app:layout_constraintStart_toEndOf="@+id/ivitemimg"
+        app:layout_constraintTop_toBottomOf="@+id/buttonadd2" />
+
+    <TextView
+        android:id="@+id/tvitemqty"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_below="@id/ivitemimg"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@id/tvpRs"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/tvpRs"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvpQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivitemimg"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="80dp"
+        android:text="Qty:"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/ivitemimg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvitemname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:text="pasta"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivitemimg"
+        android:layout_width="174dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/tvitemname"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/italian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvitemname" />
+
+    <TextView
+        android:id="@+id/tvpRs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivitemimg"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+
+        android:text="Rs:  "
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/ivitemimg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvitemprice"
+        android:layout_width="68dp"
+        android:layout_height="23dp"
+        android:layout_below="@id/ivitemimg"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/tvpRs"
+        android:text=" 250"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/tvpRs"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

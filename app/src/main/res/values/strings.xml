@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dastar Khwan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="add">Saving Score</string>
+    <string name="get">Scores List</string>
+    <string name="name">Player Name</string>
+    <string name="ok">OK</string>
+    <string name="list_header">High scores</string>
+    <string name="cancel">Cancel</string>
+    <string name="score">Player Score</string>
+
+
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".CategoryMenu">
+    <!--
+        <TextView
+            android:id="@+id/tvrv"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:textColor="#009688"
+            android:text="Menu Categories"
+           android:layout_alignParentTop="true"
+           android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/> -->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cateMenuRecyclerview"
+        android:layout_width="386dp"
+        android:layout_height="578dp"
+        android:layout_marginStart="1dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="1dp"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="80dp"
+        app:backgroundTint="#A18F8A"
+        app:rippleColor="#000000"
+        app:srcCompat="@drawable/carticon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="Menu"
+        app:backgroundTint="#A18F8A"
+        app:srcCompat="@drawable/home" />
+
+</RelativeLayout>
